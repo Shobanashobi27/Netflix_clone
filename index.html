@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix Clone - Watch TV Shows & Movies Online</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="https://assets.nflxext.com/us/ffe/siteui/common/icons/nficon2016.ico">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-left">
+                <a href="#" class="logo">
+                    <i class="fab fa-neos"></i>
+                    <span class="netflix-text">NETFLIX</span>
+                </a>
+                <ul class="nav-links">
+                    <li><a href="#" class="active">Home</a></li>
+                    <li><a href="#">TV Shows</a></li>
+                    <li><a href="#">Movies</a></li>
+                    <li><a href="#">New & Popular</a></li>
+                    <li><a href="#">My List</a></li>
+                </ul>
+            </div>
+            <div class="nav-right">
+                <div class="search-container">
+                    <i class="fas fa-search"></i>
+                    <input type="text" class="search-input" placeholder="Search titles, people">
+                </div>
+                <a href="#" class="profile">
+                    <img src="https://i.pravatar.cc/40" alt="Profile">
+                </a>
+            </div>
+            <div class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Banner -->
+    <section class="hero">
+        <div class="hero-bg" id="hero-background">
+            <div class="hero-overlay"></div>
+            <div class="hero-content">
+                <div class="hero-info animate-fade-up">
+                    <h1 class="hero-title">STRANGER THINGS</h1>
+                    <div class="hero-meta">
+                        <span class="rating"><i class="fas fa-star"></i> 8.7/10</span>
+                        <span class="year">2016</span>
+                        <span class="seasons">4 Seasons</span>
+                        <span class="quality">4K UHD</span>
+                    </div>
+                    <p class="hero-description">When a young boy vanishes, a small town uncovers a mystery involving secret experiments, terrifying supernatural forces and one strange little girl.</p>
+                    <div class="hero-buttons">
+                        <button class="btn-play"><i class="fas fa-play"></i> Play</button>
+                        <button class="btn-info"><i class="fas fa-info-circle"></i> More Info</button>
+                        <button class="btn-list"><i class="fas fa-plus"></i> My List</button>
+                    </div>
+                </div>
+                <div class="hero-controls">
+                    <button class="hero-control-btn" id="prev-bg"><i class="fas fa-chevron-left"></i></button>
+                    <button class="hero-control-btn" id="next-bg"><i class="fas fa-chevron-right"></i></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Movie Sections -->
+    <main class="main-content">
+        <!-- Continue Watching -->
+        <section class="movie-section">
+            <h2 class="section-title">Popular on Netflix</h2>
+            <div class="movie-row" id="continue-watching">
+                <button class="scroll-btn left-scroll"><i class="fas fa-chevron-left"></i></button>
+                <button class="scroll-btn right-scroll"><i class="fas fa-chevron-right"></i></button>
+                <div class="movie-container">
+                    <!-- Movies will be added by JavaScript -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Trending Now -->
+        <section class="movie-section">
+            <h2 class="section-title">Trending Now</h2>
+            <div class="movie-row" id="trending">
+                <button class="scroll-btn left-scroll"><i class="fas fa-chevron-left"></i></button>
+                <button class="scroll-btn right-scroll"><i class="fas fa-chevron-right"></i></button>
+                <div class="movie-container">
+                    <!-- Movies will be added by JavaScript -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Netflix Originals -->
+        <section class="movie-section">
+            <h2 class="section-title">Netflix Originals</h2>
+            <div class="movie-row" id="originals">
+                <button class="scroll-btn left-scroll"><i class="fas fa-chevron-left"></i></button>
+                <button class="scroll-btn right-scroll"><i class="fas fa-chevron-right"></i></button>
+                <div class="movie-container">
+                    <!-- Movies will be added by JavaScript -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Dark Sci-Fi & Fantasy -->
+        <section class="movie-section">
+            <h2 class="section-title">Dark Sci-Fi & Fantasy</h2>
+            <div class="movie-row" id="dark-fantasy">
+                <button class="scroll-btn left-scroll"><i class="fas fa-chevron-left"></i></button>
+                <button class="scroll-btn right-scroll"><i class="fas fa-chevron-right"></i></button>
+                <div class="movie-container">
+                    <!-- Movies will be added by JavaScript -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Top Rated -->
+        <section class="movie-section">
+            <h2 class="section-title">Top Rated</h2>
+            <div class="movie-row" id="top-rated">
+                <button class="scroll-btn left-scroll"><i class="fas fa-chevron-left"></i></button>
+                <button class="scroll-btn right-scroll"><i class="fas fa-chevron-right"></i></button>
+                <div class="movie-container">
+                    <!-- Movies will be added by JavaScript -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Recently Added -->
+        <section class="movie-section">
+            <h2 class="section-title">Recently Added</h2>
+            <div class="movie-row" id="recent">
+                <button class="scroll-btn left-scroll"><i class="fas fa-chevron-left"></i></button>
+                <button class="scroll-btn right-scroll"><i class="fas fa-chevron-right"></i></button>
+                <div class="movie-container">
+                    <!-- Movies will be added by JavaScript -->
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="social-links">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+            <div class="footer-links">
+                <a href="#">Audio and Subtitles</a>
+                <a href="#">Media Center</a>
+                <a href="#">Privacy</a>
+                <a href="#">Contact Us</a>
+                <a href="#">Cookie Preferences</a>
+                <a href="#">Corporate Information</a>
+                <a href="#">Speed Test</a>
+                <a href="#">Legal Notices</a>
+                <a href="#">Only on Netflix</a>
+                <a href="#">Help Center</a>
+                <a href="#">Jobs</a>
+                <a href="#">Terms of Use</a>
+            </div>
+            <div class="copyright">
+                <p>&copy; 1997-2023 Netflix Clone. This is a demo project for educational purposes.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Video Modal -->
+    <div class="modal" id="video-modal">
+        <div class="modal-content">
+            <button class="close-modal">&times;</button>
+            <div class="video-container">
+                <iframe id="modal-video" width="100%" height="100%" src="" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
